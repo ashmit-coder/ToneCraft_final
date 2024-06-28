@@ -1,0 +1,135 @@
+body{
+    background-image:url("../public/hero-gradient.png");
+    background-position:center;
+    background-repeat:repeat;
+    background-size:cover;
+    overflow-x:hidden;
+}
+.navIncons{
+    font-size:20px;
+    color:white;
+    font-weight:500;
+    position:relative;
+}
+.navIncons::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background:white;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0);
+}
+.navIncons:hover::after{
+    transform: scale(1);
+}
+.landingPage{
+    width:100%;
+    min-height:100vh;
+}
+.subLanding{
+    width:100%;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.subLanding span{
+    font-size:100px;
+    font-weight:bold;
+
+}
+.navbar{
+   width:100%;
+   background-color:transparent;
+   backdrop-filter:blur(10px);
+}
+.hero_image{
+    width:800px;
+    height:550px;
+    margin-top:-30px;
+}
+.profileImage{
+    scale:0.7;
+    transform:all 1s linear;
+}
+.profileImage:hover{
+    scale:0.6;
+
+}
+.profilepage{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.profileBox1{
+    width:80%;
+    height:320px;
+    border-radius:15px;
+    /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
+    background-image: url("../public/backprofilr.jpg");
+    background-repeat:no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    position:relative;
+}
+.profileBox2{
+    position:absolute;
+    width:150px;
+    /* border:1px solid black; */
+    bottom:-120px;
+    right:50px;
+    display:flex;
+    flex-direction:column;
+   
+}
+.profileBox2 span{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+.profileBox3{
+    border-radius:100%;
+    width:150px;
+    height:150px;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+
+}
+.dataBox{
+    width:80%;
+    /* border:1px solid white; */
+    margin-top:150px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.dataBoxButtons{
+    display:flex;
+    gap:50px;
+}
+.class1{
+    float:left;
+    font-weight:bold;
+    color:white;
+    font-size:18px;
+    background-color:transparent;
+    border:0;
+}
+.selectedOne{
+    color:rgb(255, 123, 0);
+    border-bottom:3px solid rgb(255,123,0);
+}
+.dataBox_line{
+    width:100%;
+    height:3px;
+    background-color:white;
+    margin-top:-10px;
+}
+.audioPlayer{
+    width:100%;
+}
+.cardLayout{
+    border-radius:100%;
+}
+
